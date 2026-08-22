@@ -1,0 +1,500 @@
+/* ===========================
+   HERO SECTION
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    padding: 100px 5% 70px;
+    background: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff 55%,
+        #f6fbf6 100%
+    );
+    overflow: hidden;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+/* ===========================
+   LEFT
+=========================== */
+
+.hero-left {
+    flex: 0 0 46%;
+    max-width: 46%;
+    min-width: 0;
+}
+
+.hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: #eef8ec;
+    color: #2E7D32;
+    border: 1px solid #d7ead7;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.hero-left h1 {
+    font-size: 58px;
+    line-height: 1.12;
+    font-weight: 800;
+    letter-spacing: -1px;
+    max-width: 100%;
+    overflow-wrap: normal;
+}
+
+.hero-left h1 span {
+    color: #2E7D32;
+}
+
+.hero-left p {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 45px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 16px 34px;
+    border-radius: 14px;
+
+    font-weight: 600;
+    font-size: 17px;
+
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.15);
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #2E7D32;
+    color: #fff;
+    border: none;
+}
+
+.primary-btn:hover {
+    background: #236427;
+}
+
+.secondary-btn {
+    background: #fff;
+    color: #2E7D32;
+    border: 2px solid #2E7D32;
+}
+
+.secondary-btn:hover {
+    background: #2E7D32;
+    color: #fff;
+}
+
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.hero-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+
+    border-radius: 50%;
+
+    background: #eef8ec;
+    color: #2E7D32;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+}
+
+.feature h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.feature span {
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* ===========================
+   RIGHT
+=========================== */
+
+.hero-right {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 0;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===========================
+   CURVED IMAGE
+=========================== */
+
+.hero-image {
+    display: block;
+
+    width: 100%;
+    max-width: 780px;
+
+    height: 610px;
+
+    object-fit: cover;
+
+    border-radius: 90px 25px 25px 90px;
+
+    margin-left: 0;
+}
+
+
+/* ===========================
+   GREEN CURVE
+=========================== */
+
+.hero-right::before {
+    content: "";
+
+    position: absolute;
+
+    left: -25px;
+    top: 20px;
+
+    width: 70px;
+    height: 610px;
+
+    border: 2px solid #2E7D32;
+    border-right: none;
+
+    border-radius: 90px 0 0 90px;
+
+    pointer-events: none;
+}
+
+
+/* ===========================
+   FLOATING CARDS
+=========================== */
+
+.floating-card {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: 210px;
+
+    padding: 14px 16px;
+
+    background: #fff;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+    z-index: 5;
+}
+
+.card-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #2E7D32;
+    color: #fff;
+
+    font-size: 18px;
+}
+
+.floating-card h3 {
+    font-size: 24px;
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+
+.floating-card p {
+    font-size: 13px;
+    color: #555;
+}
+
+.floating-card span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* ===========================
+   FLOATING CARD POSITIONS
+=========================== */
+
+.card1 {
+    top: 35px;
+    right: -10px;
+}
+
+.card2 {
+    top: 225px;
+    right: -10px;
+}
+
+.card3 {
+    bottom: 35px;
+    right: -10px;
+}
+
+.card2 h3,
+.card2 p,
+.card2 span {
+    color: black;
+}
+
+
+/* ===========================
+   LARGE SCREEN
+=========================== */
+
+@media (min-width: 1400px) {
+
+    .hero-left {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    .hero-right {
+        flex: 0 0 51%;
+        max-width: 51%;
+    }
+
+}
+
+
+/* ===========================
+   RESPONSIVE - 1200px
+=========================== */
+
+@media (max-width: 1200px) {
+
+    .hero-container {
+        gap: 35px;
+    }
+
+    .hero-left {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    .hero-right {
+        flex: 0 0 52%;
+        max-width: 52%;
+    }
+
+    .hero-left h1 {
+        font-size: 52px;
+    }
+
+    .hero-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ===========================
+   RESPONSIVE - 992px
+=========================== */
+
+@media (max-width: 992px) {
+
+    .hero {
+        padding: 90px 5% 60px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero-left {
+        width: 100%;
+        max-width: 700px;
+        flex: none;
+
+        text-align: center;
+    }
+
+    .hero-left p {
+        margin: 0 auto 30px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-features {
+        justify-items: center;
+    }
+
+    .hero-right {
+        width: 100%;
+        max-width: 800px;
+        flex: none;
+
+        margin-top: 20px;
+    }
+
+    .hero-right::before {
+        display: none;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 450px;
+        border-radius: 25px;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        position: static;
+        margin-top: 20px;
+    }
+
+}
+
+
+/* ===========================
+   RESPONSIVE - 768px
+=========================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 80px 20px 60px;
+    }
+
+    .hero-left h1 {
+        font-size: 42px;
+        line-height: 1.15;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        height: 330px;
+    }
+
+    .floating-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+}
+
+
+/* ===========================
+   RESPONSIVE - 480px
+=========================== */
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 70px 15px 50px;
+    }
+
+    .hero-left h1 {
+        font-size: 34px;
+    }
+
+    .hero-left p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hero-tag {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    .hero-image {
+        height: 280px;
+    }
+
+}
