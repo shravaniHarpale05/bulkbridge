@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import "../styles/Navbar.css";
-import logo from "../assets/images/logo.png";
+import React, { useState, useEffect } from "react";  //react,usestate ani useeffect import kel ahe 
+import "../styles/Navbar.css";        //ithe css import keli ahe
+import logo from "../assets/images/logo.png";   // img import keli ahe 
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { getUser, logout, dashboardPathForRole } from "../utils/auth";
 
@@ -129,12 +129,8 @@ export default function Navbar() {
           <p>
             {t.tagline}
           </p>
-
         </div>
-
       </div>
-
-
       {/* =====================================
           HAMBURGER
       ===================================== */}

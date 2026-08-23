@@ -99,7 +99,7 @@ export default function About() {
             <div className="stat-box">
               <AiOutlineStar className="stat-icon"/>
               <h2>99%</h2>
-              <p>Satisfaction</p>
+              <p>SatisfactionNNNNN</p>
             </div>
 
           </div>
