@@ -1,0 +1,133 @@
+.orders-page {
+  min-height: 100vh;
+  background: #f6f9f5;
+  padding: 35px;
+  color: #202820;
+  font-family: Arial, sans-serif;
+}
+
+.orders-header {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.orders-tag {
+  color: #2e7d32;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.orders-header h1 {
+  margin: 8px 0;
+  font-size: 30px;
+}
+
+.orders-header p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.back-dashboard-btn {
+  border: none;
+  background: #2e7d32;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.orders-tabs {
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.orders-tabs button {
+  border: none;
+  background: transparent;
+  padding: 10px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  color: #666;
+}
+
+.orders-tabs .active-tab {
+  background: #2e7d32;
+  color: white;
+}
+
+.orders-main-box {
+  background: white;
+  min-height: 450px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.big-order-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff5d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.orders-main-box h2 {
+  margin: 5px 0;
+}
+
+.orders-main-box p {
+  color: #888;
+  max-width: 430px;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.add-produce-order-btn {
+  margin-top: 15px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 650px) {
+
+  .orders-page {
+    padding: 15px;
+  }
+
+  .orders-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .orders-tabs {
+    overflow-x: auto;
+  }
+
+}

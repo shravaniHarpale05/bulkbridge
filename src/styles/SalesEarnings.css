@@ -1,0 +1,277 @@
+.sales-page {
+  min-height: 100vh;
+  background: #f6f9f5;
+  padding: 35px;
+  color: #202820;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+.sales-header {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.sales-tag {
+  color: #2e7d32;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sales-header h1 {
+  margin: 8px 0;
+  font-size: 30px;
+}
+
+.sales-header p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.back-dashboard-btn {
+  border: none;
+  background: #2e7d32;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+/* STATISTICS */
+
+.sales-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.sales-card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.sales-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.green-icon {
+  background: #e3f4e4;
+  color: #2e7d32;
+}
+
+.yellow-icon {
+  background: #fff5d9;
+}
+
+.purple-icon {
+  background: #eeebff;
+}
+
+.orange-icon {
+  background: #fff0df;
+}
+
+.sales-card span {
+  color: #777;
+  font-size: 13px;
+}
+
+.sales-card h2 {
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+.sales-card small {
+  color: #999;
+}
+
+
+/* BOX */
+
+.sales-box {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  min-height: 300px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.sales-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sales-box-header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.sales-box-header p {
+  margin: 5px 0 0;
+  color: #888;
+  font-size: 12px;
+}
+
+.sales-box-header select {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+
+/* EMPTY */
+
+.sales-empty {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sales-chart-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #eef8ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.sales-empty h3 {
+  margin: 5px;
+}
+
+.sales-empty p {
+  color: #888;
+  font-size: 13px;
+  max-width: 350px;
+  line-height: 1.6;
+}
+
+
+/* VIEW ORDERS */
+
+.view-orders-btn {
+  border: 1px solid #dce8da;
+  background: #f8fcf7;
+  color: #2e7d32;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* START */
+
+.sales-start {
+  background: #2e7d32;
+  color: white;
+  padding: 25px 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sales-start > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sales-start > div > span {
+  font-size: 38px;
+}
+
+.sales-start h2 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.sales-start p {
+  margin: 0;
+  opacity: .85;
+  font-size: 13px;
+}
+
+.sales-start button {
+  background: white;
+  color: #2e7d32;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+
+  .sales-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .sales-page {
+    padding: 15px;
+  }
+
+  .sales-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .sales-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .sales-box-header {
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sales-start {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+}
